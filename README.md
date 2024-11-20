@@ -1,6 +1,6 @@
 
 # video_extract
-Extract and compile in a new video all occurrences of certain object type using python tensorflow object detection models
+Extract and compile in a new video all occurrences of certain object types using python tensorflow object detection models
 
 The module is using TensorFlow hub models to search through the video for occurrences of certain object classes, it extracts them and compile in a new video
 

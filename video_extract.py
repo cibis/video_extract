@@ -65,7 +65,7 @@ class VideoExtract:
     
     def __hasClasses(self, class_names, scores, checkClasses, min_score=0.1):
         for ix, class_name in enumerate(class_names):
-            if scores[ix] >= min_score and class_name.decode("ascii") in checkClasses:                    
+            if scores[ix] >= min_score and class_name.decode("ascii").lower() in [x.lower() for x in checkClasses]:                    
                 return True, class_name.decode("ascii"), int(100 * scores[ix])
         return False, "", 0
 
