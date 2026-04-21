@@ -10,8 +10,9 @@ from pathlib import Path
 import math
 import time
 from yaspin import yaspin
+from video_extract_base import VideoExtractBase
 
-class VideoExtract:
+class VideoExtract(VideoExtractBase):
 
     def __init__(self, 
                  detector = hub.load("https://www.kaggle.com/models/google/mobilenet-v2/frameworks/TensorFlow1/variations/openimages-v4-ssd-mobilenet-v2/versions/1").signatures['default'], 

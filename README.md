@@ -1,3 +1,7 @@
+⚠️ This project is no longer actively developed.
+
+A completely new implementation is available at:
+https://github.com/cibis/video-extract-agents
 
 # video_extract
 Extract and compile in a new video all occurrences of certain object types using python tensorflow object detection models
